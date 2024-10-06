@@ -27,10 +27,12 @@ export function UserMessage({ children }: { children: React.ReactNode }) {
 
 export function BotMessage({
   content,
-  className
+  className,
+  sources
 }: {
   content: string | StreamableValue<string>
   className?: string
+  sources?: string[]
 }) {
   const text = useStreamableText(content)
 
@@ -81,6 +83,20 @@ export function BotMessage({
         >
           {text}
         </MemoizedReactMarkdown>
+        {sources && sources.length > 0 && (
+          <div className="mt-2 text-sm text-muted-foreground">
+            <strong>Sources:</strong>
+            <ul>
+              {sources.map((source, index) => (
+                <li key={index}>
+                  <a href={source} target="_blank" rel="noopener noreferrer">
+                    {source}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   )
