@@ -37,23 +37,23 @@ export function ChatPanel({
   const exampleMessages = [
     {
       heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      subheading: 'current risk metrics?',
+      message: 'What are the current risk metrics?'
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: 'Can you provide',
+      subheading: 'a risk assessment report?',
+      message: 'Can you provide a risk assessment report?'
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: 'How is the',
+      subheading: 'market volatility today?',
+      message: 'How is the market volatility today?'
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: 'What are the',
+      subheading: 'latest compliance updates?',
+      message: 'What are the latest compliance updates?'
     }
   ]
 
